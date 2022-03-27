@@ -6,7 +6,9 @@ export const colors = {
   secondaryVariant: '#0AD1B0',
   primaryBackground: '#19191B',
   text: '#fff',
-  textOpacity: 'rgb(255,255,255,0.8)',
+  textOpacity: 'rgba(255,255,255,0.8)',
+  darkOpacity: 'rgba(0, 0, 0, 0.3)',
+  lightOpacity: 'rgba(255, 255, 255, 0.5)',
   shadowColor: '#000',
 };
 
@@ -18,8 +20,8 @@ export const fontFamily = {
 
 export const fontSize = {
   title: 26,
-  text: 18,
-  button: 20,
+  text: 16,
+  button: 18,
 };
 
 export const padding = {
