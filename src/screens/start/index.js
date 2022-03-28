@@ -9,7 +9,7 @@ import {styles} from './styles';
 const logo = require('../../../assets/images/logo.png');
 const startImage = require('../../../assets/images/startImage.jpg');
 
-const Start = ({navigation, route}) => {
+const Start = ({navigation}) => {
   return (
     <ImageBackground
       source={startImage}
