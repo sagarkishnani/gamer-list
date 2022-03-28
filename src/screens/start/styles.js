@@ -23,26 +23,7 @@ export const styles = StyleSheet.create({
     textAlign: 'center',
     fontSize: fontSize.text,
   },
-  linearGradient: {
-    borderRadius: 12,
-    alignItems: 'center',
-    justifyContent: 'center',
-    height: 40,
-    width: 150,
-  },
   buttonContainer: {
     marginTop: 100,
-  },
-  buttonText: {
-    borderRadius: 12,
-    textAlign: 'center',
-    color: colors.text,
-    padding: 6,
-    marginLeft: 1,
-    marginRight: 1,
-    width: 145,
-    backgroundColor: colors.darkOpacity,
-    fontFamily: fontFamily.fontSemiBold,
-    fontSize: fontSize.button,
   },
 });

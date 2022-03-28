@@ -2,10 +2,11 @@
 
 import React from 'react';
 
-import {View, Text, ImageBackground, TouchableOpacity} from 'react-native';
-import LinearGradient from 'react-native-linear-gradient';
+import {View, Text, ImageBackground, Image} from 'react-native';
+import Button from '../../components/atoms/button';
 import {styles} from './styles';
 
+const logo = require('../../../assets/images/logo.png');
 const startImage = require('../../../assets/images/startImage.jpg');
 
 const Start = ({navigation, route}) => {
@@ -15,23 +16,19 @@ const Start = ({navigation, route}) => {
       resizeMode="cover"
       style={styles.image}>
       <View style={styles.overlay}>
-        <Text style={styles.logo}>LOGO</Text>
+        <View style={styles.logoContainer}>
+          <Image source={logo} style={styles.logo}></Image>
+        </View>
         <Text style={styles.text}>
           Únete a la comunidad y recibe recomendaciones de los últimos juegos
         </Text>
         <View style={styles.buttonContainer}>
-          <LinearGradient
-            start={{x: 0, y: 0}}
-            end={{x: 1, y: 0}}
-            colors={['#FE53BB', '#09FBD3']}
-            style={styles.linearGradient}>
-            <TouchableOpacity
-              onPress={() => {
-                navigation.navigate('Home');
-              }}>
-              <Text style={styles.buttonText}>Empezar</Text>
-            </TouchableOpacity>
-          </LinearGradient>
+          <Button
+            text={'Empezar'}
+            onPress={() => {
+              navigation.navigate('Home');
+            }}
+          />
         </View>
       </View>
     </ImageBackground>
